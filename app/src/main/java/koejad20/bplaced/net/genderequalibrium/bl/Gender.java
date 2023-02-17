@@ -17,7 +17,8 @@ public enum Gender implements Serializable, Parcelable {
     GENDERQUEER,
     AGENDER;
 
-    private final boolean GAY = true;
+    @NonNull
+    private final Boolean GAY = true;
     static final long serialVersionUID = 182921787982173L;
 
     public static final Creator<Gender> CREATOR = new Creator<Gender>() {
